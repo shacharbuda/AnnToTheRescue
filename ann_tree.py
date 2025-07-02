@@ -1,4 +1,4 @@
-from typing import Optional, List
+from typing import List
 import numpy as np
 
 N = 5  # Number of dimensions for the vectors
