@@ -5,7 +5,7 @@ N = 5  # Number of dimensions for the vectors
 K = 10  # Number of nearest neighbors to find
 # LEAF_SIZE is the maximum number of vectors in a leaf node
 # we limit it to 10 to avoid missing too many neighbors.
-LEAF_SIZE = max(10, K)
+LEAF_SIZE = min(10, K)
 
 class Vector:
     def __init__(self, coordinates: List[float]):
